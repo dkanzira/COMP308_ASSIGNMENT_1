@@ -7,12 +7,12 @@ router.get("/", function(req, res, next) {
 });
 
 /* GET Feedback page. */
-router.get("/feedback", function(req, res, next) {
+router.post("/feedback", function(req, res, next) {
   res.render("feedback", { title: "FeedBack" });
 });
 
 /* GET Feedback page. */
-router.get("/thankyou", function(req, res, next) {
+router.post("/thankyou", function(req, res, next) {
   res.render("thankyou", { title: "Thank You" });
 });
 
